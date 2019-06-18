@@ -1,0 +1,5 @@
+<input placeholder='What would you like to see?' [(ngModel)] = q>
+<button (click)='_search.returnSearch(q)'>Search</button>
+<p *ngFor = 'let film of _search.films'>
+    <img src = 'https://image.tmdb.org/t/p/w300{{film.poster_path}}'>
+</p>

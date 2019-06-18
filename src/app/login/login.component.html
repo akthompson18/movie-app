@@ -1,0 +1,10 @@
+<div class="login-wrapper">
+    <form class="login">
+        <section class="title">
+            <h3 class="welcome">It's Movie Time!</h3>
+            <h5 class="hint">Use your email and password to sign in</h5>
+        </section>
+        
+<input placeholder='email' [(ngModel)]='loginInfo.email'><br>
+<input placeholder='password' [(ngModel)]='loginInfo.password'><br>
+<button (click)='onclick()'>Sign In</button><br>
